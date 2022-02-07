@@ -18,8 +18,8 @@ cat "${doc}" |
 # pandoc --list-highlight-styles
 # pandoc --no-highlight
 
-highlight -V -s "${style}" -S markdown -O xterm256 --canvas=${width} "${outfile}" | less -r
-
+# highlight -V -s "${style}" -S markdown -O xterm256 --canvas=${width} "${outfile}" | less -r
+bat -p "${outfile}"
 # commonmark+hard_line_breaks
 # pager="mdcat -p"
 # pager="bat -p"
